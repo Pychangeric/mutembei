@@ -1,5 +1,5 @@
 body {
-    background-color: linear-gradient(to bottom, #FFDAB9, #F08080, #6495ED);
+    background-color: #12f519;
   }
   
   .card-container {
@@ -102,9 +102,10 @@ body {
     position: fixed;
     top: 0;
     right: 15px;
+    text-align: center;
     border: 3px solid #0838e6;
     z-index: 9999;
-    background-color: rgb(194, 209, 192);
+    background-color: rgb(#fff);
     width: 350px;
     height: 400px;
     display: none;
