@@ -2,24 +2,23 @@
 <html>
 <head>
     <link rel="stylesheet" href="project.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
   <title>Universities</title>
  
 </head>
 <body>
+      
   <h1>Universities</h1>
   <div id="universities"></div>
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  
   <div id="universities-container"></div>
   
+  
   <div id="universities-container">
+    <div class="like">
+        <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></a>
+    </div>
     <h1></h1>
+    
     <div class="chat-popup" id="myChat">
         <div class="chat-area" id="chatArea">
           <p>messages are end-to-end encrypted<br>.No one outside of this chat,can read them.</p>
@@ -28,8 +27,16 @@
         <button id="sendButton">Send</button>
         <button id="closeButton">Close</button>
       </div>
-
       <button class="open-button" id="openButton">Chat</button>
+
+  <h2>Comments</h2>
+  <ul id="comments-list"></ul>
+  <form id="comment-form">
+    <textarea id="comment-text" placeholder="Add a comment"></textarea>
+    <button id="submitButton">Submit</button>
+  </form>
+</div>
+
   <script src="project.js"></script>
 </body>
 </html>

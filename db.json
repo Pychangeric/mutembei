@@ -8,6 +8,7 @@
         ],
         "country": "Kuwait",
         "name": "American University of Middle East",
+        "like":"https://www.flaticon.com/free-icons/heart",
         "alpha_two_code": "KW",
         "domains": [
             "aum.edu.kw"
@@ -21,6 +22,7 @@
         ],
         "country": "United States",
         "name": "Middlebury College",
+        "like":"https://www.flaticon.com/free-icons/heart",
         "alpha_two_code": "US",
         "domains": [
             "middlebury.edu"
@@ -34,6 +36,7 @@
         ],
         "country": "Jordan",
         "name": "Middle East University",
+        "like":"https://www.flaticon.com/free-icons/heart",
         "alpha_two_code": "JO",
         "domains": [
             "meu.edu.jo"
@@ -47,6 +50,7 @@
         ],
         "country": "Turkey",
         "name": "Middle East Technical University",
+        "like":"https://www.flaticon.com/free-icons/heart",
         "alpha_two_code": "TR",
         "domains": [
             "metu.edu.tr"
@@ -60,6 +64,7 @@
         ],
         "country": "United States",
         "name": "Middle Georgia State College",
+        "like":"https://www.flaticon.com/free-icons/heart",
         "alpha_two_code": "US",
         "domains": [
             "mga.edu"
@@ -73,6 +78,7 @@
         ],
         "country": "United States",
         "name": "Middle Tennessee State University",
+        "like":"https://www.flaticon.com/free-icons/heart",
         "alpha_two_code": "US",
 
         "domains": ["mtsu.edu"]
@@ -87,6 +93,7 @@
         ],
         "country": "United States",
         "name": "Middlesex Community College",
+        "like":"https://www.flaticon.com/free-icons/heart",
         "alpha_two_code": "US",
         "domains": [
             "middlesex.mass.edu"
@@ -101,6 +108,7 @@
         ],
         "country": "United States",
         "name": "Middlesex County College",
+        "like":"https://www.flaticon.com/free-icons/heart",
         "alpha_two_code": "US",
         "domains": [
             "middlesexcc.edu"
@@ -114,6 +122,7 @@
         ],
         "country": "United Kingdom",
         "name": "Middlesex University",
+        "like":"https://www.flaticon.com/free-icons/heart",
         "alpha_two_code": "GB",
         "domains": [
             "mdx.ac.uk"
@@ -127,6 +136,7 @@
         ],
         "country": "United Kingdom",
         "name": "Middlesbrough College",
+        "like":"https://www.flaticon.com/free-icons/heart",
         "alpha_two_code": "GB",
         "domains": [
             "middlesbro.ac.uk",

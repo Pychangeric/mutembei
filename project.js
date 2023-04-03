@@ -80,6 +80,7 @@ sendButton.addEventListener("click", () => {
   // Check if the user sent "hi"
   if (message.toLowerCase() === "hi") {
     newMessage.textContent = "Welcome to our channel, how can we help you?";
+
   } else {
     newMessage.textContent = `You: ${message}`;
   }
@@ -89,3 +90,32 @@ sendButton.addEventListener("click", () => {
   // Create a new chat message element
 
 });
+const cardLike = document.createElement("i");
+cardLike.classList.add("fas", "fa-heart", "like-icon");
+cardTitle.appendChild(cardLike);
+
+const slideshow = document.querySelector('.slideshow');
+const images = slideshow.querySelectorAll('img');
+const row = slideshow.querySelector('.row');
+let index = 0;
+
+// Display the first three images
+for (let i = 0; i < 3; i++) {
+  images[i].style.opacity = 1;
+}
+
+// Start the slideshow
+setInterval(() => {
+  images[index].style.opacity = 0;
+  index = (index + 1) % images.length;
+  images[index].style.opacity = 1;
+
+  // Add the current image to the row
+  if (index >= 3) {
+    const img = document.createElement('img');
+    img.src = university.poster[index].src;
+    row.appendChild(img);
+  }
+}, 2000);
+
+
