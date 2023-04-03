@@ -98,3 +98,61 @@ body {
   .card-container:hover .card-content {
     background-color: #90EE90;
   }
+  .chat-popup {
+    position: fixed;
+    top: 0;
+    right: 15px;
+    border: 3px solid #0838e6;
+    z-index: 9999;
+    background-color: rgb(240, 243, 240);
+    width: 350px;
+    height: 400px;
+    display: none;
+  }
+  
+  .chat-popup .chat-area {
+    height: 300px;
+    overflow-y: scroll;
+  }
+  
+  .chat-popup textarea {
+    width: 100%;
+    height: 60px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 5px solid #121312;
+    border-radius: 4px;
+    background-color: red;
+    resize: none;
+  }
+  
+  .chat-popup button {
+    background-color: #4CAF50;
+    color: gold;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 15px;
+  }
+  
+  .chat-popup button:hover {
+    opacity: 0.8;
+  }
+  
+  .open-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 15px;
+    border-radius: 5px;
+  }
+  
+  .open-button:hover {
+    opacity: 0.8;
+  }
+  
