@@ -1,0 +1,137 @@
+{
+    "universities": [
+    {
+        "state-province": null,
+        "poster":"https://www.businessliveme.com/wp-content/uploads/2019/03/Image-AUM-1024x262.jpg",
+        "web_pages": [
+            "http://www.aum.edu.kw/"
+        ],
+        "country": "Kuwait",
+        "name": "American University of Middle East",
+        "alpha_two_code": "KW",
+        "domains": [
+            "aum.edu.kw"
+        ]
+    },
+    {
+        "state-province": null,
+        "poster":"https://www.middlebury.edu/college/sites/www.middlebury.edu.college/files/styles/1440x576/public/2019-08/admissions-home.jpg?fv=QiUeuMXG&itok=pe_oBJ3n",
+        "web_pages": [
+            "http://www.middlebury.edu/"
+        ],
+        "country": "United States",
+        "name": "Middlebury College",
+        "alpha_two_code": "US",
+        "domains": [
+            "middlebury.edu"
+        ]
+    },
+    {
+        "state-province": null,
+        "poster":"https://upload.wikimedia.org/wikipedia/commons/d/d7/Middle-east-university-entrance.jpg",
+        "web_pages": [
+            "http://www.meu.edu.jo/"
+        ],
+        "country": "Jordan",
+        "name": "Middle East University",
+        "alpha_two_code": "JO",
+        "domains": [
+            "meu.edu.jo"
+        ]
+    },
+    {
+        "state-province": null,
+        "poster":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/MiddleEastTechnicalUniversityCampus3804x440.jpg/300px-MiddleEastTechnicalUniversityCampus3804x440.jpg",
+        "web_pages": [
+            "http://www.metu.edu.tr/"
+        ],
+        "country": "Turkey",
+        "name": "Middle East Technical University",
+        "alpha_two_code": "TR",
+        "domains": [
+            "metu.edu.tr"
+        ]
+    },
+    {
+        "state-province": null,
+        "poster":"https://i.ytimg.com/vi/epZTXUEzrmA/maxresdefault.jpg",
+        "web_pages": [
+            "http://www.mga.edu/"
+        ],
+        "country": "United States",
+        "name": "Middle Georgia State College",
+        "alpha_two_code": "US",
+        "domains": [
+            "mga.edu"
+        ]
+    },
+    {
+        "state-province": null,
+        "poster":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFfB8XZCeMfJ6Sxc7_eEHLEMUKobz6VmcGOQ&usqp=CAU",
+        "web_pages": [
+            "http://www.mtsu.edu/"
+        ],
+        "country": "United States",
+        "name": "Middle Tennessee State University",
+        "alpha_two_code": "US",
+
+        "domains": ["mtsu.edu"]
+        
+        
+    },
+    {
+        "state-province": null,
+        "poster":"https://s.hdnux.com/photos/01/13/41/30/19797556/12/1200x0.jpg",
+        "web_pages": [
+            "http://www.middlesex.mass.edu"
+        ],
+        "country": "United States",
+        "name": "Middlesex Community College",
+        "alpha_two_code": "US",
+        "domains": [
+            "middlesex.mass.edu"
+        ]
+        
+    },
+    {
+        "state-province": null,
+        "poster":"https://cdn.centraljersey.com/wp-content/uploads/sites/26/2022/11/edm-community-venue.jpg",
+        "web_pages": [
+            "http://www.middlesexcc.edu"
+        ],
+        "country": "United States",
+        "name": "Middlesex County College",
+        "alpha_two_code": "US",
+        "domains": [
+            "middlesexcc.edu"
+        ]
+    },
+    {
+        "state-province": null,
+        "poster":"https://embed.mdx.ac.uk/vt2018/img/start-bg/mdx-intro-small-v1a-dr-220218.jpg",
+        "web_pages": [
+            "http://www.mdx.ac.uk/"
+        ],
+        "country": "United Kingdom",
+        "name": "Middlesex University",
+        "alpha_two_code": "GB",
+        "domains": [
+            "mdx.ac.uk"
+        ]
+    },
+    {
+        "state-province": null,
+        "poster":"https://upload.wikimedia.org/wikipedia/commons/7/7c/Middlesbrough_College_%28geograph_5320043%29.jpg",
+        "web_pages": [
+            "https://www.mbro.ac.uk/"
+        ],
+        "country": "United Kingdom",
+        "name": "Middlesbrough College",
+        "alpha_two_code": "GB",
+        "domains": [
+            "middlesbro.ac.uk",
+            "mbro.ac.uk"
+        ]
+    }
+ ]
+}s
