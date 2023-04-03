@@ -167,13 +167,5 @@ body {
   .like-button:hover {
     color: gold;
   }
-  .like-button:focus {
-    outline: none;
-  }
-  
-  /* Add this to your CSS to style the like count */
-  .like-count {
-    display: inline-block;
-    margin-left: 0.5rem;
-  }
+
   
