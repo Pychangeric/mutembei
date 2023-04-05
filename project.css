@@ -23,11 +23,18 @@ body {
     font-size: 140px;
     color: #b9b0bc;
     font-weight: 500;
+    font-style: normal;
 }
-
+h1{
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
 .back-video{
   position: absolute;
-  right: 0;
+  left: 0;
   z-index: -1;
 } 
   .card-container {
@@ -39,7 +46,7 @@ body {
   .card-container .card {
     width: calc(50% - 10px);
     margin: 10px;
-    background-color: #b09c81;
+    background-color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -118,7 +125,7 @@ body {
     object-fit: cover;
   }
   .card-container:hover .card-content {
-    background-color: #cbaf92;
+    background-color: white;
   }
 
   
@@ -127,9 +134,9 @@ body {
     top: 0;
     right: 15px;
     text-align: center;
-    border: 3px solid #b0b4bc;
+    border: 3px solid white;
     z-index: 9999;
-    background-color: #81a5b0;
+    background-color: white;
     width: 350px;
     height: 400px;
     display: none;
@@ -145,14 +152,14 @@ body {
     height: 60px;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 1px solid #121312;
+    border: 1px solid white;
     border-radius: 4px;
-    background-color: #81b0a9;
+    background-color: white;
     resize: none;
   }
   
   .chat-popup button {
-    background-color: wheat;
+    background-color: white;
     color: rgb(black);
     border: none;
     cursor: pointer;
@@ -231,7 +238,7 @@ body {
   }
   
   .popup-footer {
-    background-color: #0c0cf7;
+    background-color: white;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -267,7 +274,7 @@ body {
     right: 0;
     width: 40%;
     height: 100%;
-    background-color: #fff;
+    background-color: red;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     z-index: 9999;
     overflow: auto;
@@ -282,7 +289,7 @@ body {
 }
 
 #likeButton {
-    background-color: #3498db;
+    background-color: red;
     border: none;
     color: white;
     padding: 10px 20px;
