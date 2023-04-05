@@ -1,13 +1,3 @@
-window.onload = function () {
-  Particles.init({
-    selector: ".background",
-    maxParticle: 200,
-    speed: 0.5,
-    connectParticles: true,
-    color: "#FFFF00",
-  });
-};
-
 fetch("http://localhost:3000/universities")
 .then(response => response.json())
 .then(data => {
@@ -15,13 +5,7 @@ fetch("http://localhost:3000/universities")
   data.forEach((university) => {
     const cardContainer = document.createElement("div");
     cardContainer.classList.add("card-container");
-  
-    // Add a like button/icon
-    const likeIcon = document.createElement("i");
-    likeIcon.classList.add("far", "fa-heart", "like-icon");
-    likeIcon.setAttribute("data-id", university.id);
-    cardContainer.appendChild(likeIcon);
-  
+
     const cardImg = document.createElement("img");
     cardImg.classList.add("card-img");
     cardImg.src = university.poster;
@@ -62,6 +46,10 @@ fetch("http://localhost:3000/universities")
 .catch(error => {
   console.error(error);
 });
+function showPopup() {
+  var popup = document.getElementById("popup");
+  popup.style.display = "block";
+}
 // Get the chat popup element and the open button
 const chatPopup = document.getElementById("myChat");
 const openButton = document.getElementById("openButton");
@@ -106,20 +94,7 @@ sendButton.addEventListener("click", () => {
 // Set initial like count to 0
 let likeCount = 0;
 
-// Get reference to the like button
-const likeButton = document.getElementById("like");
-
-// Add event listener to the like button
-likeButton.addEventListener("click", function() {
-  // Check if button has already been clicked
-  if (!likeButton.disabled) {
-    // Increment the like count
+    const cardTextLikes = document.getElementById("likeButton").addEventListener("click", function() {
     likeCount++;
-
-    // Update the like button text to show the updated count
-    likeButton.textContent = `Like (${likeCount})`;
-
-    // Disable the like button
-    likeButton.disabled = true;
-  }
-});
+    document.getElementById("likeCount").innerHTML = likeCount;
+    });
