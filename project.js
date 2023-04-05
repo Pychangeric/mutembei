@@ -1,48 +1,61 @@
+window.onload = function () {
+  Particles.init({
+    selector: ".background",
+    maxParticle: 200,
+    speed: 0.5,
+    connectParticles: true,
+    color: "#FFFF00",
+  });
+};
+
 fetch("http://localhost:3000/universities")
 .then(response => response.json())
 .then(data => {
   const universitiesContainer = document.getElementById("universities-container");
-  data.forEach(university => {
+  data.forEach((university) => {
     const cardContainer = document.createElement("div");
     cardContainer.classList.add("card-container");
-
+  
+    // Add a like button/icon
+    const likeIcon = document.createElement("i");
+    likeIcon.classList.add("far", "fa-heart", "like-icon");
+    likeIcon.setAttribute("data-id", university.id);
+    cardContainer.appendChild(likeIcon);
+  
     const cardImg = document.createElement("img");
     cardImg.classList.add("card-img");
     cardImg.src = university.poster;
     cardImg.alt = university.name;
-
+  
     const cardContent = document.createElement("div");
     cardContent.classList.add("card-content");
-
+  
     const cardTitle = document.createElement("h2");
     cardTitle.classList.add("card-title");
     cardTitle.textContent = university.name;
-
+  
     const cardTextCountry = document.createElement("p");
     cardTextCountry.classList.add("card-text");
     cardTextCountry.textContent = `Country: ${university.country}`;
-
+  
     const cardLinkWebsite = document.createElement("p");
     cardLinkWebsite.classList.add("card-text");
-    cardLinkWebsite.innerHTML = `Website: <a href="${university.web_pages[0]}" class="card-link">${university.web_pages[0]}</a>`;
-
+    cardLinkWebsite.innerHTML = `Website: <a href="${
+      university.web_pages[0]
+    }" class="card-link">${university.web_pages[0]}</a>`;
+  
     const cardTextLocation = document.createElement("p");
     cardTextLocation.classList.add("card-text");
     cardTextLocation.textContent = `Location: ${university.location}`;
-
-    const cardTextRanking = document.createElement("p");
-    cardTextRanking.classList.add("card-text");
-    cardTextRanking.textContent = `World Ranking: ${university.ranking}`;
-
+  
     cardContent.appendChild(cardTitle);
     cardContent.appendChild(cardTextCountry);
     cardContent.appendChild(cardLinkWebsite);
     cardContent.appendChild(cardTextLocation);
-    cardContent.appendChild(cardTextRanking);
-
+  
     cardContainer.appendChild(cardImg);
     cardContainer.appendChild(cardContent);
-
+  
     universitiesContainer.appendChild(cardContainer);
   });
 })
@@ -89,4 +102,24 @@ sendButton.addEventListener("click", () => {
   
   // Create a new chat message element
 
+});
+// Set initial like count to 0
+let likeCount = 0;
+
+// Get reference to the like button
+const likeButton = document.getElementById("like");
+
+// Add event listener to the like button
+likeButton.addEventListener("click", function() {
+  // Check if button has already been clicked
+  if (!likeButton.disabled) {
+    // Increment the like count
+    likeCount++;
+
+    // Update the like button text to show the updated count
+    likeButton.textContent = `Like (${likeCount})`;
+
+    // Disable the like button
+    likeButton.disabled = true;
+  }
 });
