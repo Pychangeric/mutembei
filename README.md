@@ -8,8 +8,10 @@ Instead of users stuggling to find the websites of university interested in one 
 ******
 
 ## SCREENSHOTS
-- link 1
-- link 2
+- https://github.com/Pychangeric/mutembei/issues/1#issue-1656740213
+- https://github.com/Pychangeric/mutembei/issues/2#issue-1656741354
+- https://github.com/Pychangeric/mutembei/issues/3#issue-1656742401
+- https://github.com/Pychangeric/mutembei/issues/5#issue-1656744225
 
 
 ********
