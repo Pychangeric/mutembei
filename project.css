@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
     background-color: #b0b4bc;
+    -webkit-backface-visibility: visible;
 }
 
 .hero{
@@ -14,7 +15,9 @@ body {
   align-items: center;
   justify-content: center;
   margin-right: 10px;
+  overflow: hidden;
 }
+
 .content {
     text-align: left;
 }
@@ -37,51 +40,142 @@ h1{
   left: 0;
   z-index: -1;
 } 
-  .card-container {
-    display: flex 33.3%;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .card-container .card {
-    width: calc(50% - 10px);
-    margin: 10px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
-    display: none;
-    flex-direction: row;
-  }
-  
-  .card-container .card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 5px 5px 0 0;
-  }
-  
-  .card-container .card-content {
-    padding: 10px;
-    display: nowrap;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-  }
-  
-  .card-container .card-title {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-  
-  .card-container .card-text {
-    font-size: 1rem;
-    margin: 0;
-  }
-  
-  .card-container .card-link {
-    color: #0077cc;
-    text-decoration: none;
-  }
+#universities-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 60vh;
+  width: 50%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.column {
+  width: calc(33.33% - 10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card {
+  width: calc(50% - 5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-info h2 {
+  margin: 0;
+}
+
+.card-info p {
+  margin: 5px 0;
+}
+
+.card-info a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #3366cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card-info a:hover {
+  background-color: #27408B;
+}
+
+.card-link {
+  color: blue;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  left: 20px;
+}
+
+.swiper-button-next {
+  right: 20px;
+}
+
+/* Add this to your project.css file */
   .card-container {
     display: inline-block;
     width: 45%;
@@ -91,6 +185,7 @@ h1{
   
   .card-container:hover .card-details {
     display: block;
+    width: 100%;
   }
   
   .card-img {
@@ -107,7 +202,7 @@ h1{
     color: white;
     padding: 10px;
     display: none;
-    width: 50%;
+    width: 100%;
   }
   
   .card-details h2 {
@@ -307,6 +402,32 @@ h1{
   }
   
   #likeCount {
-    font-size: 16px;
+    font-size: 25px;
     margin-top: 10px;
+  }
+  #dislikeButton {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  #dislikeButton:hover {
+    background-color: #2980b9;
+  }
+  
+  #dislikeCount {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .copyright{
+    text-align: center;
+    font-size: 22px;
   }
