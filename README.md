@@ -40,7 +40,7 @@ Instead of users stuggling to find the websites of university interested in one 
 
 *****
 ## Live Link
-Or you can access the web application directly via this [LINK.](link.com/)
+Or you can access the web application directly via this [LINK.](https://pychangeric.github.io/mutembei/)
 *****
 ## Dependencies
 - google
