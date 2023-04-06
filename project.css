@@ -2,7 +2,6 @@ body {
 	margin: 0;
 	padding: 0;
     background-color: #b0b4bc;
-    -webkit-backface-visibility: visible;
 }
 
 .hero{
@@ -17,16 +16,20 @@ body {
   margin-right: 10px;
   overflow: hidden;
 }
-
-.content {
-    text-align: left;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }
-
-.content h1 {
-    font-size: 140px;
-    color: #b9b0bc;
-    font-weight: 500;
-    font-style: normal;
+.search-bar {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin-bottom: 20px;
+  top: 0;
 }
 h1{
   font-size: 60px;
@@ -51,10 +54,11 @@ h1{
 }
 
 .row {
-  width: 100%;
+  width: 120%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between 7px;
   margin-bottom: 20px;
+  margin-block-end: auto;
 }
 
 .column {
@@ -69,6 +73,7 @@ h1{
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
+  grid-template-rows: minmax(20px);
 }
 
 .card {
@@ -79,14 +84,17 @@ h1{
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
+  gap: 10px;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(24, 106, 237, 0.2);
+  font-weight: 400;
+  background-color: #0c37fa;
 }
 
 .card img {
-  width: 100%;
+  width: 60%;
   height: 200px;
   object-fit: cover;
   object-position: center;

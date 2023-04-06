@@ -1,5 +1,3 @@
-
-
 // Fetch university data from API
 fetch('http://localhost:3000/universities')
   .then(response => response.json())
@@ -83,4 +81,19 @@ function showSlides(n) {
   
   slides[slideIndex - 1].classList.add("active");
 }
+function searchUniversities() {
+  var input, filter, universityList, universities, universityName;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  universityList = document.getElementById("universityList");
+  universities = universityList.getElementsByClassName("university");
 
+  for (var i = 0; i < universities.length; i++) {
+    universityName = universities[i].getElementsByTagName("h2")[0];
+    if (universityName.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      universities[i].style.display = "";
+    } else {
+      universities[i].style.display = "none";
+    }
+  }
+}

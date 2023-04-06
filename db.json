@@ -159,6 +159,22 @@
     },
     {
       "state-province": null,
+      "id": 13,
+      "poster": "https://i.ytimg.com/vi/WblKBNQzAa4/maxresdefault.jpg",
+      "web_pages": [
+        "https://www.berkeley.edu/"
+      ],
+      "country": "United Kingdom",
+      "name": "University of California, Berkeley",
+      "like": "https://www.flaticon.com/free-icons/heart",
+      "likeCount": 0,
+      "alpha_two_code": "cd",
+      "domains": [
+        "mdx.ac.uk"
+      ]
+    },
+    {
+      "state-province": null,
       "id": 11,
       "poster": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Middlesbrough_College_%28geograph_5320043%29.jpg",
       "web_pages": [
