@@ -43,7 +43,7 @@ Instead of users stuggling to find the websites of university interested in one 
 Or you can access the web application directly via this [LINK.](https://pychangeric.github.io/mutembei/)
 *****
 ## Dependencies
-- google
+- google  
 - youtube
 - w3 school
 - firtrex
